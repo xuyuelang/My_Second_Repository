@@ -1,5 +1,5 @@
 # My_Second_Repository
-我的第二个测试仓库
+北邮自动请假脚本
 北邮自动请假小程序
 By Lambertlang
 
