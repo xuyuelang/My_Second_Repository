@@ -6,8 +6,9 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 
-usr = 2019140449
-psd = 11066532
+usr = "202011225588"
+psd = "********"
+tel="17888888888"
 url="https://auth.bupt.edu.cn/authserver/login?service=https%3A%2F%2Fservice.bupt.edu.cn%2Fsite%2Flogin%2Fcas-login%3Fredirect_url%3Dhttps%253A%252F%252Fservice.bupt.edu.cn%252Fv2%252Fmatter%252Fdetail%253Fid%253D578"
 
 class TestCase6():
@@ -34,8 +35,7 @@ class TestCase6():
         self.driver.find_element(By.CSS_SELECTOR, ".el-dialog__footer:nth-child(3) .zl-button-line").click()
         time.sleep(2)
         self.driver.find_element(By.CSS_SELECTOR, "tr:nth-child(3) > td:nth-child(4) .doneplugin-value").click()
-        self.driver.find_element(By.CSS_SELECTOR, "tr:nth-child(3) > td:nth-child(4) .doneplugin-value").send_keys(
-            "17862954087")
+        self.driver.find_element(By.CSS_SELECTOR, "tr:nth-child(3) > td:nth-child(4) .doneplugin-value").send_keys(tel)
         self.driver.find_element(By.CSS_SELECTOR, ".el-select__input").click()
         self.driver.find_element(By.CSS_SELECTOR, ".el-select__input").send_keys("西土城")
         time.sleep(2)
