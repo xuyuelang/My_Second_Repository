@@ -21,12 +21,12 @@ class TestCase1():
 
     def test_case1(self):
         self.driver.get(
-            "https://app.bupt.edu.cn/uc/wap/login?redirect=https%3A%2F%2Fapp.bupt.edu.cn%2Fncov%2Fwap%2Fdefault%2Findex")
+            "https:*****")
         self.driver.set_window_size(1550, 832)
         self.driver.find_element(By.CSS_SELECTOR, "div:nth-child(1) > input").click()
         time.sleep(2)
-        self.driver.find_element(By.CSS_SELECTOR, "div:nth-child(1) > input").send_keys("2019140449")
-        self.driver.find_element(By.CSS_SELECTOR, "div:nth-child(2) > input").send_keys("11066532")
+        self.driver.find_element(By.CSS_SELECTOR, "div:nth-child(1) > input").send_keys("学号")
+        self.driver.find_element(By.CSS_SELECTOR, "div:nth-child(2) > input").send_keys("密码")
         self.driver.find_element(By.CSS_SELECTOR, ".btn").click()
         time.sleep(2)
         self.driver.find_element(By.CSS_SELECTOR, "li:nth-child(4) > .radio div:nth-child(1) i").click()
